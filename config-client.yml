@@ -1,0 +1,16 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: config-client
+  datasource:
+    password: root
+    username: root
+    url: jdbc:mysql://localhost:3306/guli?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+logging:
+  level:
+    com:
+      dao: debug
